@@ -1,0 +1,40 @@
+var App=()=>{
+  var info=Data.profiles;
+  return(
+    <section className="parent">
+    {info.map((i,index)=>(
+      <article key={index} className="child">
+        <h2>{i.basicInfo.Name}</h2>
+        <h2 class="h3">{i.basicInfo.Role}</h2>
+        <a href={"mailto:"+i.basicInfo.Email}>{i.basicInfo.Email}</a><br/>
+        <a href={"tel:"+i.basicInfo.Mobile}>{i.basicInfo.Mobile}</a>
+      </article>
+      ))
+    }
+    </section>);
+}
+
+
+/*********profile.js*****************/
+
+export default class profile1 extends React.Component{
+constructor(){
+super();
+this.state={
+name:"Jagan Saragadam"
+}
+}
+NameChange=()=>{
+this.setState({
+name:"Ramu Saragadam"
+})
+}
+render(){
+return(
+<div>
+<h2> {this.state.name} </h2>
+<button onClick={this.NameChange}>Change Name </button>
+</div>
+)
+}
+}

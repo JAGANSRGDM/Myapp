@@ -1,0 +1,28 @@
+{
+	"profiles":[
+		{
+			"basicInfo":{
+				"Name":"Jagan Saragadam",
+				"Role":"Trainee",
+				"Email":"jagansrgdm@gmail.com",
+				"Mobile":"+91 7036738765"
+			}	
+		},
+		{
+			"basicInfo":{
+				"Name":"Ramu Saragadam",
+				"Role":"Trainee",
+				"Email":"ramusrgdm@gmail.com",
+				"Mobile":"+91 9966211654"
+			}
+		},
+		{
+			"basicInfo":{
+				"Name":"Krishna Veni Saragadam",
+				"Role":"Trainee",
+				"Email":"krishnavenisrgdm@gmail.com",
+				"Mobile":"+91 7799208690"
+			}
+		}
+	]
+}

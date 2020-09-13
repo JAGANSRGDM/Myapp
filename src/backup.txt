@@ -1,0 +1,70 @@
+import React from 'react';
+//import logo from './logo.svg';
+import './App.css';
+
+//function based components:
+function App() {
+  return (
+    <div className="App">
+      <h1> Welcome to REACTJS</h1>
+    </div>
+  );
+}
+
+
+//props example:
+class App3 extends React.Component{
+  render(){
+    return(
+      <div className="App">
+        <h3>parent</h3>
+        <ChildComponent name="SJ"/>
+      </div>
+      );
+  }
+}
+
+const ChildComponent= (props)=>{
+  return <p>childComponent {props.name}</p>
+}
+
+//class based components:
+class App1 extends React.Component{
+render(){
+return(
+<div>
+<App />
+<App2 />
+<App3 />
+<h2 style={{color:"orange", textAlign:"center"}}> Welcome to your first app using reactJs.</h2>
+</div>
+);}
+}
+
+//States example:
+class App2 extends React.Component{
+  constructor(){
+    super();
+    this.state={name:"Jagan Saragadam"}
+  }
+  render(){
+    return(
+      <h1 className="App">Welcome {this.state.name}.</h1>
+      );
+  }
+}
+
+
+
+var App=()=>{
+  var name='jagan';
+  return (
+    <div className='App'>
+      <h2>Hello SJ</h2>
+      <h3>{name}</h3>
+    </div>
+    );
+}
+ReactDom.render(<h2 className='App'>SJ</h2>,document.getElementById('sj-id'));
+
+//export default App1;
